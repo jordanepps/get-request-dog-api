@@ -7,7 +7,6 @@ function loadDogImages(data) {
 }
 
 function loadOneDogImage(data) {
-    console.log(data);
     $('#image-container').html(createImageTag(data.message));
 }
 

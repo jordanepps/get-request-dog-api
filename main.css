@@ -11,6 +11,11 @@ form {
     margin: 25px 0;
 }
 
+#number {
+    width: 150px;
+
+}
+
 .dog-image {
     width: 200px;
 }
