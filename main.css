@@ -6,3 +6,8 @@ body {
     margin: 0;
     padding: 15px;
 }
+
+.dog-image {
+    width: 200px;
+    height: 100%;
+}
