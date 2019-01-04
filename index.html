@@ -17,14 +17,25 @@
 	<body>
 		<main>
 			<h1>Get Requests with Dog API</h1>
-			<form id="js-dog-form">
+			<form id="js-random-dog-form">
 				<input
 					type="number"
 					name="number"
 					id="number"
+					max="50"
 					placeholder="Number between 1-50"
 				/>
-				<input type="submit" value="Get dog pics!" />
+				<input type="submit" value="Get random dog pics!" />
+			</form>
+			<form id="js-breed-form">
+				<input
+					type="text"
+					name="breed"
+					id="breed"
+					placeholder="Enter Breed"
+					required
+				/>
+				<input type="submit" value="Get one random dog pic!" />
 			</form>
 			<div id="image-container"></div>
 		</main>
