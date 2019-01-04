@@ -1,8 +1,18 @@
-function getDogPics(number) {
+function createImageTag(imageSrc) {
+	return `<img src="${imageSrc}"/>`;
+}
+
+function loadDogImages(data) {
+	console.log(data.message);
+	// $('#image-container').html('<h2>TEST</h2>');
+	$('#image-container').html(data.message.map(createImageTag));
+}
+
+function getDogImages(number) {
 	console.log(number);
 	fetch(`https://dog.ceo/api/breeds/image/random/${number}`)
 		.then(res => res.json())
-		.then(resJSON => console.log(resJSON))
+		.then(resJSON => loadDogImages(resJSON))
 		.catch(err => console.log(err));
 }
 
@@ -10,7 +20,7 @@ function watchForm() {
 	$('#js-dog-form').submit(e => {
 		e.preventDefault();
 		console.log('clicked');
-		getDogPics($('#number').val());
+		getDogImages($('#number').val());
 	});
 }
 
