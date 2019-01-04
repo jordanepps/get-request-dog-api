@@ -1,5 +1,5 @@
 function createImageTag(imageSrc) {
-	return `<img src="${imageSrc}"/>`;
+	return `<img src="${imageSrc}" alt="random image of a dog"/>`;
 }
 
 function loadDogImages(data) {
